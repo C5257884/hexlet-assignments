@@ -1,14 +1,11 @@
 package exercise;
 
 // BEGIN
-import javax.sound.midi.Sequence;
-import java.lang.CharSequence;
-import java.util.stream.IntStream;
-
 class ReversedSequence implements CharSequence {
     private String revSeq;
-    public ReversedSequence(String input) {
-        revSeq = new StringBuilder(input).reverse().toString(); ;
+
+    ReversedSequence(String input) {
+        revSeq = new StringBuilder(input).reverse().toString();
     }
 
     @Override
@@ -28,7 +25,7 @@ class ReversedSequence implements CharSequence {
 
     @Override
     public CharSequence subSequence(int start, int end) {
-        return revSeq.subSequence(start, end) ;
+        return revSeq.subSequence(start, end);
     }
 
     @Override

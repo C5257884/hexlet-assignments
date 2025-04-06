@@ -8,7 +8,7 @@ class Flat implements Home {
     private double balconyArea;
     private int floor;
 
-    public Flat(double area, double balconyArea, int floor) {
+    Flat(double area, double balconyArea, int floor) {
         this.area = area;
         this.balconyArea = balconyArea;
         this.floor = floor;
@@ -26,8 +26,8 @@ class Flat implements Home {
 
     @Override
     public String toString() {
-        return "Квартира площадью " +
-            getArea() + " метров на " + floor + " этаже";
+        return "Квартира площадью "
+            + getArea() + " метров на " + floor + " этаже";
     }
 }
 // END

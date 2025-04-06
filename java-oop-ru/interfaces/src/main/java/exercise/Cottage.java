@@ -5,7 +5,7 @@ class Cottage implements Home {
     private double area;
     private int floorCount;
 
-    public Cottage(double area, int floorCount) {
+    Cottage(double area, int floorCount) {
         this.area = area;
         this.floorCount = floorCount;
     }
